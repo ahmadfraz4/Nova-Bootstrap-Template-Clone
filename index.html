@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOVA</title>
+    <!-- js link -->
+    <script src="assets/js/app.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/b7d4578240.js" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body class="overlay">
+    <header class="header d-flex align-items-center fixed-top">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="#" class="logo"
+          ><div class="logo fs-3 fw-bold text-white">Nova</div></a
+        >
+        <ul
+          class="menu d-lg-flex d-none mt-1 col-md-6 align-items-center justify-content-between"
+        >
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#blog">Blog</a></li>
+       
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div onclick="toggleNav()" class="bar d-lg-none d-block">
+          <i class="fa-solid fa-bars text-white fs-5"></i>
+        </div>
+        <ul class="mobile-menu d-lg-none d-flex col-md-6 justify-content-between">
+          <li class="position-absolute end-0 top-0 mt-1 me-1">
+            <div onclick="closeNav()">
+              <i class="fa-solid fa-xmark fs-5 text-white"></i>
+            </div>
+          </li>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#blog">Blog</a></li>
+       
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="banner d-flex align-items-center bg-color-secondary">
+      <div class="container text-white">
+        <div
+          class="col-lg-4 d-flex hero flex-column justify-content-center align-items-center"
+        >
+          <div class="fs-1 fw-bold lh-1">Focus On What Matters</div>
+          <blockquote
+            data-aos="fade-up"
+            data-aos-delay="100"
+            class="aos-init aos-animate mt-5"
+          >
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Perspiciatis cum recusandae eum laboriosam voluptatem repudiandae
+              odio, vel exercitationem officiis provident minima.
+            </p>
+          </blockquote>
+          <div
+            class="btn-section d-flex justify-content-center flex-wrap justify-content-lg-start w-100"
+          >
+            <button
+              class="hero-btn rounded-pill border-0 py-2 px-4 text-white fw-semibold"
+            >
+              Get Started
+            </button>
+            <button
+              class="border-0 mt-sm-0 mt-3 btn-watch-video bg-transparent"
+            >
+              <i class="fa-regular fa-circle-play"></i>
+              Watch Video
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- text-section 2 -->
+    <section id="about" class="text-section text-center mt-5">
+      <h2 class="">Why Choose Us</h2>
+    </section>
+    <!-- section 3 -->
+    <section  class="section3 mt-5">
+      <div class="container d-flex flex-lg-row flex-column">
+        <div class="col-lg-5 col-12 why-us"></div>
+        <div
+          class="why-us-slides col-12 d-flex flex-column py-lg-0 py-5 col-lg-7 justify-content-center align-items-center"
+        >
+          <section class="col-md-9 col-12 text-center mt-lg-0 mt-4">
+            <div class="fs-4 fw-semibold text-lg-center text-center">
+              Lorem ipsum dolor sit ame consectetur.
+            </div>
+            <div class="fs-6 mt-2 text-primary text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error,
+              minus?
+            </div>
+            <div class="para fs-6 mt-3 text-black text-center">
+              Lorem ipsum dolor sit amet consectetur consectetur deconsectetur
+              adipisicing elit. Laborum vel culpa necessitatibus quisquam
+              accusantium sequi ad quos inventore, recusandae error soluta
+              aliquam ducimus, molestias nesciunt rem eius corporis maiores quo.
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <!-- text-section -->
+    <section id="services" class="text-section text-center mt-5">
+      <h2 class="">Our Services</h2>
+    </section>
+    <!-- section 4 -->
+    <section  class="section4 mt-4 mb-5">
+      <div class="container d-flex flex-wrap">
+        <div class="box d-flex mt-5 col-lg-4 col-md-6 col-12">
+          <div class="box-icon fs-5">
+            <i class="fa-solid fa-briefcase" style="color: #f57813;"></i>
+          </div>
+          <div class="content ms-3 pe-3">
+            <div class="box-title fw-bold">
+              Lorem ipsum.
+            </div>
+            <div class="box-description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing adipisicing
+              elit elit. Delectus quibusdam ad possimus tenetur!
+            </div>
+          </div>
+        </div>
+        <div class="box d-flex mt-5 col-lg-4 col-md-6 col-12">
+          <div class="box-icon fs-5">
+            <i class="fa-solid fa-clipboard-list" style="color: #15a04a;"></i>
+          </div>
+          <div class="content ms-3 pe-3">
+            <div class="box-title fw-bold">
+              Lorem ipsum.
+            </div>
+            <div class="box-description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing adipisicing
+              elit elit. Delectus quibusdam ad possimus tenetur!
+            </div>
+          </div>
+        </div>
+        <div class="box d-flex mt-5 col-lg-4 col-md-6 col-12">
+          <div class="box-icon fs-5">
+            <i class="fa-solid fa-chart-simple" style="color: #d90769;"></i>
+          </div>
+          <div class="content ms-3 pe-3">
+            <div class="box-title fw-bold">
+              Lorem ipsum.
+            </div>
+            <div class="box-description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing adipisicing
+              elit elit. Delectus quibusdam ad possimus tenetur!
+            </div>
+          </div>
+        </div>
+        <div class="box d-flex mt-5 col-lg-4 col-md-6 col-12">
+          <div class="box-icon fs-5">
+            <i class="fa-solid fa-binoculars" style="color: #15bfbc;"></i>
+          </div>
+          <div class="content ms-3 pe-3">
+            <div class="box-title fw-bold">
+              Lorem ipsum.
+            </div>
+            <div class="box-description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing adipisicing
+              elit elit. Delectus quibusdam ad possimus tenetur!
+            </div>
+          </div>
+        </div>
+        <div class="box d-flex mt-5 col-lg-4 col-md-6 col-12">
+          <div class="box-icon fs-5">
+            <i class="fa-solid fa-sun" style="color: #f5cf13;"></i>
+          </div>
+          <div class="content ms-3 pe-3">
+            <div class="box-title fw-bold">
+              Lorem ipsum.
+            </div>
+            <div class="box-description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing adipisicing
+              elit elit. Delectus quibusdam ad possimus tenetur!
+            </div>
+          </div>
+        </div>
+        <div class="box d-flex mt-5 col-lg-4 col-md-6 col-12">
+          <div class="box-icon fs-5">
+            <i class="fa-solid fa-calendar" style="color: #1335f5;"></i>
+          </div>
+          <div class="content ms-3 pe-3">
+            <div class="box-title fw-bold">
+              Lorem ipsum.
+            </div>
+            <div class="box-description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing adipisicing
+              elit elit. Delectus quibusdam ad possimus tenetur!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 5 -->
+    <section id="portfolio"
+      class="section5 text-white text-center d-flex justify-content-center align-items-center flex-column my-5"
+    >
+      <div class="fs-4 fw-bold">
+        Ut fugiat aliquam aut non
+      </div>
+      <div class="fs-6 col-lg-6 mt-4 col-md-9 col-12 text-white">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident.
+      </div>
+      <button class="cta-btn rounded-pill border-0 mt-5">Call of Action</button>
+    </section>
+    <!-- section 6 -->
+    <section id="team" class="section6 mt-5 py-5">
+        <div class="container">
+            <div class="fs-3 fw-bold col-md-9 col-12">Powerful Features for Your Business</div>
+             <section class="col-12 d-flex align-items-center align-items-md-start justify-content-between flex-md-row flex-column">
+              <ul class="featureList d-flex flex-wrap justify-content-between col-md-7 col-sm-8 col-12">
+                <div>
+                  <li class="d-flex align-items-center mt-3">
+                    <i class="fa-solid fa-store me-3 fs-5"  style="color: #ffbb2c;"></i>
+                    <div class="fs-5">Easy Cart Features</div>  
+                 </li>
+                  <li class="d-flex align-items-center mt-3">
+                    <i class="fa-solid fa-calendar-days me-3 fs-5"  style="color: #ff2c72;"></i>
+                    <div class="fs-5">Ipsum Rerum Explicabo</div>  
+                 </li>
+                  <li class="d-flex align-items-center mt-3">
+                    <i class="fa-solid fa-database me-3 fs-5"  style="color: #2c87ff;"></i>
+                    <div class="fs-5">Easy Cart Features</div>  
+                 </li>
+                  <li class="d-flex align-items-center mt-3">
+                    <i class="fa-solid fa-scroll me-3 fs-5"  style="color: #37da68;"></i>
+                    <div class="fs-5">Ipsum Rerum Explicabo</div>  
+                 </li>
+                </div>
+                <div>
+                  <li class="d-flex align-items-center mt-3">
+                    <i class="fa-solid fa-chart-column me-3 fs-5" style="color: #2c87ff;"></i>
+                    <div class="fs-5">Sit amet consectetur adipisicing</div>  
+                 </li>
+                  <li class="d-flex align-items-center mt-3">
+                    <i class="fa-solid fa-paint-roller me-3 fs-5"  style="color: #ff2cae;"></i>
+                    <div class="fs-5">Easy Cart Features</div>  
+                 </li>
+                  <li class="d-flex align-items-center mt-3">
+                    <i class="fa-solid fa-circle-dot me-3 fs-5"  style="color: #eecd11;"></i>
+                    <div class="fs-5">Sit amet consectetur adipisicing</div>  
+                 </li>
+                  <li class="d-flex align-items-center mt-3">
+                    <i class="fa-solid fa-tower-cell me-3 fs-5" style="color: #f57813;"></i>
+                    <div class="fs-5">Easy Cart Features</div>  
+                 </li>
+                </div>
+              </ul>
+              <div class="col-5 position-relative d-flex justify-content-md-end justify-content-center mt-md-0 mt-5">
+                <div class="phone-wrap col-md-9 col-12">
+                  <img src="assets/images/section6/iphone.png" alt="Image" class="img-fluid w-100">
+                </div>
+              </div>
+             </section>
+        </div>
+    </section>
+    <!-- section 7 -->
+     <section class="section7">
+            <div class=" container my-5 p-0 py-md-5">
+              <section class="container my-md-5 m-0 py-5">
+                <div class="col-md-6 col-12">
+                
+                    <section class="heading-section7 fs-2 fw-bold">
+                      Labore Sdio Lidui Bonde Naruto
+                    </section>
+                    <section class="para-section7 fs-6 pe-5 lh-base mt-3">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nostrum molestias doloremque quae delectus odit minima corrupti blanditiis quo animi!
+                    </section>
+                    <button class="hero-btn mt-4 px-4 py-2 fs-6 border-0 text-white rounded-pill">Get Started</button>
+                  
+                </div>
+              </section>
+           </div> 
+     </section>
+    <!-- text secction -->
+    <section class="text-section text-center mt-5">
+      <h2 class="">Recent Blog Posts</h2>
+    </section>
+    <!-- section 8 -->
+    <section id="blog" class="section8 mt-5 container">
+      <div class="container row gy-5 align-items-center">
+        <div class="card border-0 col-xl-3 col-md-6 col-sm-12 col-12 ">
+          <div class="card-img overflow-hidden">
+            <img class="img-fluid" src="assets/images/section8/blog-1.jpg" alt="">
+          </div>
+          <div class="card-body">
+            <div class="meta">
+              <span class="post-date">Tue, December 12</span>
+              <span class="post-author"> / Julia Parker</span>
+            </div>
+            <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
+            <p>Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel omnis laudantium. Asperiores eum ipsa est officiis. Modi qui magni est...</p>
+            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div> 
+        <div class="card border-0 col-xl-3 col-md-6 col-sm-12 col-12 ">
+          <div class="card-img overflow-hidden">
+            <img class="img-fluid" src="assets/images/section8/blog-2.jpg" alt="">
+          </div>
+          <div class="card-body">
+            <div class="meta">
+              <span class="post-date">Tue, December 12</span>
+              <span class="post-author"> / Julia Parker</span>
+            </div>
+            <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
+            <p>Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel omnis laudantium. Asperiores eum ipsa est officiis. Modi qui magni est...</p>
+            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div> 
+        <div class="card border-0 col-xl-3 col-md-6 col-sm-12 col-12 ">
+          <div class="card-img overflow-hidden">
+            <img class="img-fluid" src="assets/images/section8/blog-3.jpg" alt="">
+          </div>
+          <div class="card-body">
+            <div class="meta">
+              <span class="post-date">Tue, December 12</span>
+              <span class="post-author"> / Julia Parker</span>
+            </div>
+            <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
+            <p>Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel omnis laudantium. Asperiores eum ipsa est officiis. Modi qui magni est...</p>
+            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div> 
+        <div class="card border-0 col-xl-3 col-md-6 col-sm-12 col-12 ">
+          <div class="card-img overflow-hidden">
+            <img class="img-fluid" src="assets/images/section8/blog-4.jpg" alt="">
+          </div>
+          <div class="card-body">
+            <div class="meta">
+              <span class="post-date">Tue, December 12</span>
+              <span class="post-author"> / Julia Parker</span>
+            </div>
+            <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
+            <p>Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel omnis laudantium. Asperiores eum ipsa est officiis. Modi qui magni est...</p>
+            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div> 
+      </div>
+    </section>
+    <!-- footer -->
+    <footer id="contact" class="mt-5 py-5">
+      <div class="container my-5">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="fs-2 text-black fw-semibold">Nova</span>
+            </a>
+            <p class="footer-para">Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links d-flex  mt-3">
+              <a href="#" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-6 footer-links">
+            <h4 class="fs-6 fw-bold">Useful Links</h4>
+            <ul class="">
+              <li><i class="fa-solid fa-minus"></i> <a href="#">Home</a></li>
+              <li><i class="fa-solid fa-minus"></i> <a href="#">About us</a></li>
+              <li><i class="fa-solid fa-minus"></i> <a href="#">Services</a></li>
+              <li><i class="fa-solid fa-minus"></i> <a href="#">Terms of service</a></li>
+              <li><i class="fa-solid fa-minus"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-6 footer-links">
+            <h4 class="fs-6 fw-bold">Our Services</h4>
+            <ul>
+              <li><i class="fa-solid fa-minus"></i> <a href="#">Web Design</a></li>
+              <li><i class="fa-solid fa-minus"></i> <a href="#">Web Development</a></li>
+              <li><i class="fa-solid fa-minus"></i> <a href="#">Product Management</a></li>
+              <li><i class="fa-solid fa-minus"></i> <a href="#">Marketing</a></li>
+              <li><i class="fa-solid fa-minus"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4 class="fs-6 fw-bold">Contact Us</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+   
+  </body>
+</html>
